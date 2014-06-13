@@ -1,0 +1,34 @@
+***********************************************************************************************
+**************************************Information Document*************************************
+***********************************************************************************************
+
+> The Zip file contains three C program files :
+
+ 1) newhost.c   -  For performing host functions
+
+ 2) myrouter.c  -  For performing Router functions
+
+ 3) mycontroller.c - For performing controller functions
+
+
+To compile the above three mentioned files ....please use "GCC" compiler.
+
+The procedure to compile these programs is :
+
+for host : > gcc newhost.c -o newhost - The output file will be created in file named - newhost.
+
+for router: > gcc myrouter.c -o myrouter - The output file will be created in file named - myrouter.
+
+for mycontroller: > gcc mycontroller.c -o mycontroller - The output file will be created in file named - mycontroller.
+
+To execute these files please give the commands as :
+
+./newhost 0 0 receiver &
+
+./myrouter 0 0 1 &
+
+./mycontroller host 0 router 0 lan 0 1 &
+
+
+
+all the programs will be automatically terminating after 100 sec.
